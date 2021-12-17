@@ -1,7 +1,6 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
-import NavBar from './components/NavBar';
-import Content from './components/Content';
+import { NavBar } from './components/NavBar';
+import { Content } from './components/Content';
 import { ThemeProvider } from 'styled-components';
 import { theme } from './utils/theme';
 

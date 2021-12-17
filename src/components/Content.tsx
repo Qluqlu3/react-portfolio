@@ -7,7 +7,7 @@ const Wrapper = Styled.div`
 	background: ${({ theme }) => theme.gray};
 `;
 
-const Content = () => {
+export const Content = React.memo(() => {
   const items = [
     { id: 1, name: 'AAA' },
     { id: 2, name: 'BBB' },
@@ -24,6 +24,4 @@ const Content = () => {
   };
 
   return <Wrapper onClick={() => deleteItem(1)}></Wrapper>;
-};
-
-export default Content;
+});

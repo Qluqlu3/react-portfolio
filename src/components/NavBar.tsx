@@ -37,7 +37,7 @@ const LinkBox = Styled.div`
   }
 `;
 
-const NavBar = () => {
+export const NavBar = React.memo(() => {
   const { t } = useTranslation();
   return (
     <Wrapper>
@@ -52,6 +52,4 @@ const NavBar = () => {
       </Router>
     </Wrapper>
   );
-};
-
-export default NavBar;
+});
